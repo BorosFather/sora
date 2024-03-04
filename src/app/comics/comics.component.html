@@ -1,0 +1,13 @@
+<div class="bg"></div>
+
+<h1>Kiadvanyok</h1>
+
+<div class="container">
+  <div *ngIf="comics">
+    <div class="row" *ngFor="let group of comics">
+      <div class="col" *ngFor="let image of group">
+        <img [src]="image.url" alt="Image" />
+      </div>
+    </div>
+  </div>
+</div>
