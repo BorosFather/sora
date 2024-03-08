@@ -5,8 +5,14 @@
 <div class="container">
   <div *ngIf="comics">
     <div class="row" *ngFor="let group of comics">
-      <div class="col" *ngFor="let image of group">
-        <img [src]="image.url" alt="Image" />
+      <div class="col" *ngFor="let item of group">
+        <div class="image-container">
+          <img [src]="item.url" alt="Image" />
+          <div class="overlay">
+            <p>{{ item.text }}</p>
+            <button>Your Button</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

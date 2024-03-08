@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./comics.component.scss']
 })
 export class ComicsComponent {
-  comics!: any[];
+  comics!: { url: string; text: string }[][];
   
   ngOnInit(): void {
     
     const comics = [
-      { url: "../../assets/imgs/comic/spi1-cover.webp"},
-      { url: "../../assets/imgs/comic/spi2-cover.webp"},
+      { url: "../../assets/imgs/comic/spi1-cover.webp", text: "eyg"},
+      { url: "../../assets/imgs/comic/spi2-cover.webp", text: "ketto"},
       { url: "../../assets/imgs/comic/spi3-cover.webp"},
       { url: "../../assets/imgs/comic/spi4-cover.webp"},
       { url: "../../assets/imgs/comic/spi5-cover.webp"},

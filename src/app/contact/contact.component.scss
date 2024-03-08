@@ -31,8 +31,28 @@ h1 {
 
 }
 
-i {
-    display: block;
-    margin-top: 500px;
-    margin-left: 500px;
+// .instagram-icon {
+//     display: block;
+//     margin-top: 400px;
+//     margin-left: 500px;
+// }
+
+// .fa-facebook {
+//     display: block;
+//     margin-top: 500px;
+//     margin-left: 600px;
+
+// }
+
+.social-icons{
+    border: 2px solid;    
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
 }
+
+.fa-brands {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
