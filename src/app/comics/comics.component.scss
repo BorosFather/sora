@@ -50,13 +50,13 @@ h1 {
     padding: 20px;
 }
 
-.image-container {
+.images {
     position: relative;
     overflow: hidden;
     box-shadow: 4px 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.image-container img {
+.images img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -78,7 +78,7 @@ h1 {
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
   
-.image-container:hover .overlay {
+.images:hover .overlay {
     background-color: rgba(16, 175, 207, 0.778);
     opacity: 1;
 }
