@@ -1,16 +1,15 @@
 @font-face {
-    font-family: "font";
-    src: url("../../assets/font/ANTIHIBB.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "font";
+  src: url("../../assets/font/ANTIHIBB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
   
-  * {
-      margin: 0;
-      padding: 0;
-      color: wheat;
-      
-    }
+* {
+  margin: 0;
+  padding: 0;
+  color: wheat;      
+}
     
     .bg {
       background-image: url('/assets/imgs/bg/fej4.webp');

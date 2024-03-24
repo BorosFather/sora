@@ -32,18 +32,10 @@ h1 {
 
 }
 
-// .container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: flex-start;
-//   }
-
 .social-icons{
     width: 200px;
     // border: 2px solid;    
     margin-top: 50px;
-    // align-items: center;
-    // text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,7 +46,9 @@ h1 {
 }
 
 .one {
-    margin-left: 100px;
+   // border: 2px solid red;
+    margin-top: 50px;
+    margin-left: 300px;
     float: left;
 }
 
@@ -75,6 +69,16 @@ h1 {
     align-items: center;
 }
 
+.email {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.phone {
+
+
+}
+
 button {
     font-size: large;
     margin-left: auto;
@@ -93,7 +97,8 @@ input {
 }
 
 .write { 
-    margin-right: 100px;
+    margin-top: 50px;
+    margin-right: 200px;
     float: right;
     border: 2px solid white;
     width: 700px;

@@ -10,10 +10,12 @@
           <img [src]="item.url" alt="Image" />
           <div class="overlay">
             <p>{{ item.text }}</p>
-            <button>Rendeld meg</button>
+            <button (click)="goToDetail(item.id)">Rendeld meg</button>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+

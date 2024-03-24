@@ -1,1 +1,44 @@
-<p>detail works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+<div class="bg"></div>
+
+<div class="container">
+    <div *ngIf="bookDetails">
+     
+        <div class="content">
+            <div class="comic">
+                <img [src]="bookDetails.url" alt="Könyv borítója"/>
+            </div>
+            <p class="tartalom">Tartalom</p>
+            <div *ngIf="bookDetails" class="thumbnail-container">
+                <div *ngFor="let image of bookDetails.images; let i = index">
+                    <img [src]="image.small" (click)="showLargeImage(image.large, i)" class="thumbnail-image" />
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="book-info">
+                <h2 class="ep">{{ bookDetails.text }}</h2>
+                <p class="description">Leiras: Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores natus voluptatem magnam culpa, aperiam similique dolorem inventore iusto eaque. {{bookDetails.text2}}</p>
+                <p class="price">Ár: {{ bookDetails.price }}</p>
+                <button>Megrendeles</button>
+            </div>
+        </div>
+        
+    </div>
+    <div *ngIf="showLarge" class="large-image-overlay">
+        <span class="close-button" (click)="closeLargeImage()">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <span class="arrow-left" (click)="prevImage()">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        </span>
+        
+        <img [src]="largeImageUrl" alt="Nagy kép" class="large-image" />
+        <span class="arrow-right" (click)="nextImage()">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
+        
+    </div>
+</div>
